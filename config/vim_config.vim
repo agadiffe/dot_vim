@@ -23,6 +23,21 @@ set autoread
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Numbers list
+set number
+
+" Show current command bottom right
+set showcmd
+
+" Enable OS mouse clicking
+set mouse=a
+
+" Show 80 character bar
+set colorcolumn=80
+
+" Set the max visible open tab
+set tabpagemax=20
+
 " Set 7 lines to the cursor - when moving vertically using j/k
 set so=7
 
@@ -46,6 +61,7 @@ set backspace=eol,start,indent
 "set whichwrap+=<,>,h,l
 
 " Ignore case when searching
+set wildignorecase
 set ignorecase
 
 " When searching try to be smart about cases 
@@ -81,17 +97,6 @@ set tm=500
 " Enable syntax highlighting
 syntax enable
 
-colorscheme desert
-set background=dark
-
-" Set extra options when running in GUI mode
-if has("gui_running")
-set guioptions-=T
-set guioptions+=e
-set t_Co=256
-set guitablabel=%M\ %t
-endif
-
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
 
@@ -121,22 +126,6 @@ set smarttab
 set shiftwidth=4
 set tabstop=4
 
-" Linebreak on 500 characters
-set lbr
-set tw=500
-
 set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Other 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set number
-set showcmd
-set mouse=a
-
-set colorcolumn=80
-
-set tabpagemax=20
