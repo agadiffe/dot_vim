@@ -61,7 +61,6 @@ set backspace=eol,start,indent
 "set whichwrap+=<,>,h,l
 
 " Ignore case when searching
-set wildignorecase
 set ignorecase
 
 " When searching try to be smart about cases 
