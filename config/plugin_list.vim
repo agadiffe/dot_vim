@@ -4,16 +4,19 @@ set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim 
 call vundle#begin()
-Plugin 'gmarik/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 
 " Colorscheme
 Plugin 'tomasr/molokai'
 
 " 42
-Plugin 'roblabla/42vim'
+" Plugin 'roblabla/42vim'
 
 " Language plugins
 Plugin 'octol/vim-cpp-enhanced-highlight'
+
+" Utilities
+Plugin 'scrooloose/nerdtree'
 
 call vundle#end()
 
