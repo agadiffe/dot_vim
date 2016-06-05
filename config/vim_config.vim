@@ -29,6 +29,10 @@ set number
 " Show current command bottom right
 set showcmd
 
+" Show invisible character
+"set list
+"set listchars=tab:>-,eol:⌇,trail:→
+
 " Enable OS mouse clicking
 set mouse=a
 
