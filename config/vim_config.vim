@@ -137,10 +137,10 @@ set wrap "Wrap lines
 " => Key Mapping
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " disable arrow
-map <Left> <Nop>
-map <Right> <Nop>
-map <Up> <Nop>
-map <Down> <Nop>
+"map <Left> <Nop>
+"map <Right> <Nop>
+"map <Up> <Nop>
+"map <Down> <Nop>
 
 " NERDTree
 map <C-p> :NERDTreeToggle<CR>
