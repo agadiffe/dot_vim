@@ -132,3 +132,15 @@ set tabstop=4
 set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Key Mapping
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" disable arrow
+map <Left> <Nop>
+map <Right> <Nop>
+map <Up> <Nop>
+map <Down> <Nop>
+
+" NERDTree
+map <C-p> :NERDTreeToggle<CR>
