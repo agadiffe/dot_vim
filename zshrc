@@ -1,10 +1,15 @@
-PATH=$HOME/.brew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texbin
-export HOMEBREW_CACHE="$HOME/Library/Caches/Homebrew"
-export HOMEBREW_CASK_OPTS="--caskroom=~/.brew-cask"
+PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texbin
+
+#### MACOS BREW ####
+#PATH=$HOME/.brew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texbin
+#export HOMEBREW_CACHE="$HOME/Library/Caches/Homebrew"
+#export HOMEBREW_CASK_OPTS="--caskroom=~/.brew-cask"
+
 HISTFILE=~/.zshrc_history
 SAVEHIST=5000
 HISTSIZE=5000
 
+export TERM=xterm-256color
 export LSCOLORS="ExGxBxDxCxEgEdxbxgxcec"
 
 setopt inc_append_history
