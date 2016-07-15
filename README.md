@@ -3,9 +3,9 @@
 ## Installation
 
 ```shell
-git clone --recursive https://github.com/roblabla/dot_vim $HOME/.vim
-ln -s .vim/vimrc .vimrc
-ln -s .vim/zshrc .zshrc
+git clone --recursive https://github.com/agadiffe/dot_vim $HOME/.vim
+ln -s $HOME/.vim/vimrc $HOME/.vimrc
+ln -s $HOME/.vim/zshrc $HOME/.zshrc
 vim +PluginInstall
 ```
 
