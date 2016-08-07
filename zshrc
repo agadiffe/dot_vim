@@ -28,10 +28,10 @@ MAIL="$USER@student.42.fr"
 export MAIL
 
 autoload colors; colors
-export PS1="%B%{$fg[red]%}%m-> %~: %b%{$reset_color%}"
+export PS1="%B%(!.%{$fg[yellow]%}.%{$fg[blue]%})%m-> %~: %b%{$reset_color%}"
 
-#alias "ls= ls --color -F"
-alias "ls= ls -FG"
+alias "ls= ls --color -F"
+#alias "ls= ls -FG"
 alias "ll=ls -l"
 alias "la=ls -la"
 alias "gccw=gcc -Wextra -Werror -Wall"
