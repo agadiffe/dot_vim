@@ -18,9 +18,6 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 " Utilities
 Plugin 'scrooloose/nerdtree'
 
-" Dockerfile syntax
-Plugin 'docker/docker' , {'rtp': '/contrib/syntax/vim/'}
-
 call vundle#end()
 
 " Re-enable filetype
