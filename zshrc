@@ -36,9 +36,11 @@ autoload colors
 colors
 
 setopt PROMPT_SUBST
-#autoload -U promptinit
-#promptinit
 export PS1='%B%(!.%{$fg[green]%}.%{$fg[red]%})%n-> %~%{$fg[black]%} $(parse_git_branch)%{$fg[red]%}: %b%{$reset_color%}'
+
+#autoload -Uz vcs_info
+#precmd() { vcs_info }
+#export PS1='%B%(!.%{$fg[green]%}.%{$fg[red]%})%n-> %~%{$fg[black]%}${vcs_info_msg_0_}%{$fg[red]%}: %b%{$reset_color%}'
 
 #alias "ls= ls --color -F"
 alias "ls= ls -FG"
