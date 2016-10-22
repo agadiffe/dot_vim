@@ -27,11 +27,21 @@ export GROUP
 MAIL="$USER@student.42.fr"
 export MAIL
 
-autoload colors; colors
-export PS1="%B%(!.%{$fg[green]%}.%{$fg[red]%})%n-> %~: %b%{$reset_color%}"
+# Add git branch if its present to PS1
+parse_git_branch() {
+	git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
 
-alias "ls= ls --color -F"
-#alias "ls= ls -FG"
+autoload colors
+colors
+
+setopt PROMPT_SUBST
+#autoload -U promptinit
+#promptinit
+export PS1='%B%(!.%{$fg[green]%}.%{$fg[red]%})%n-> %~%{$fg[black]%} $(parse_git_branch)%{$fg[red]%}: %b%{$reset_color%}'
+
+#alias "ls= ls --color -F"
+alias "ls= ls -FG"
 alias "ll=ls -l"
 alias "la=ls -la"
 alias "gccw=gcc -Wextra -Werror -Wall"
