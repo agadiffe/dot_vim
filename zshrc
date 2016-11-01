@@ -1,9 +1,13 @@
-PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texbin
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texbin
 
 #### MACOS BREW ####
-#PATH=$HOME/.brew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texbin
+#export PATH=$HOME/.brew/bin:$PATH
 #export HOMEBREW_CACHE="$HOME/Library/Caches/Homebrew"
-#export HOMEBREW_CASK_OPTS="--caskroom=~/.brew-cask"
+
+#### PYTHON VIRTUALENVWRAPPER ####
+#export WORKON_HOME=$HOME/.virtualenvs
+#source /usr/local/bin/virtualenvwrapper.sh
+#source $HOME/.brew/bin/virtualenvwrapper.sh
 
 HISTFILE=~/.zshrc_history
 SAVEHIST=5000
@@ -36,7 +40,7 @@ autoload colors
 colors
 
 setopt PROMPT_SUBST
-export PS1='%B%(!.%{$fg[green]%}.%{$fg[red]%})%n-> %~%{$fg[black]%} $(parse_git_branch)%{$fg[red]%}: %b%{$reset_color%}'
+export PS1='%B%(!.%{$fg[green]%}.%{$fg[red]%})%m-> %~%{$fg[black]%} $(parse_git_branch)%{$fg[red]%}: %b%{$reset_color%}'
 
 #autoload -Uz vcs_info
 #precmd() { vcs_info }
@@ -44,8 +48,8 @@ export PS1='%B%(!.%{$fg[green]%}.%{$fg[red]%})%n-> %~%{$fg[black]%} $(parse_git_
 
 #alias "ls= ls --color -F"
 alias "ls= ls -FG"
-alias "ll=ls -l"
-alias "la=ls -la"
+alias "ll=ls -lh"
+alias "la=ls -lah"
 alias "gccw=gcc -Wextra -Werror -Wall"
 alias "g++w=g++ -Wextra -Werror -Wall"
 
