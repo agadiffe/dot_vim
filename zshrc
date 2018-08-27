@@ -19,6 +19,7 @@ export LSCOLORS="ExGxBxDxCxEgEdxbxgxcec"
 setopt inc_append_history
 setopt share_history
 #setopt menu_complete
+unsetopt beep
 
 if [[ -f ~/.myzshrc ]]; then
   source ~/.myzshrc
@@ -46,8 +47,8 @@ export PS1='%B%(!.%{$fg[green]%}.%{$fg[red]%})%m-> %~%{$fg[black]%} $(parse_git_
 #precmd() { vcs_info }
 #export PS1='%B%(!.%{$fg[green]%}.%{$fg[red]%})%n-> %~%{$fg[black]%}${vcs_info_msg_0_}%{$fg[red]%}: %b%{$reset_color%}'
 
-#alias "ls= ls --color -F"
-alias "ls= ls -FG"
+alias "ls= ls --color -F"
+#alias "ls= ls -FG"
 alias "ll=ls -lh"
 alias "la=ls -lah"
 alias "gccw=gcc -Wextra -Werror -Wall"

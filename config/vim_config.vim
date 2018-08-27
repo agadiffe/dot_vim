@@ -11,20 +11,24 @@ filetype indent on
 " Set to auto read when a file is changed from the outside
 set autoread
 
-" With a map leader it's possible to do extra key combinations
-" like <leader>w saves the current file
-"let mapleader = ","
-"let g:mapleader = ","
+" gets rid of all the crap Vim does to be vi compatible
+set nocompatible
 
-" Fast saving
-"nmap <leader>w :w!<cr>
+" prevents some security exploits
+set modelines=0
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" create <FILENAME>.un~ files that contain undo information
+set undofile
+
 " Numbers list
 set number
+
+" display how far away each line is from the current one
+set relativenumber
 
 " Show current command bottom right
 set showcmd
@@ -142,5 +146,21 @@ set wrap "Wrap lines
 "map <Up> <Nop>
 "map <Down> <Nop>
 
+" With a map leader it's possible to do extra key combinations
+" like <leader>w saves the current file
+let mapleader = " "
+let g:mapleader = " "
+
+" Fast saving + saving/exit
+nmap <leader>w :w!<cr>
+nmap <leader>x :x!<cr>
+
 " NERDTree
-map <C-p> :NERDTreeToggle<CR>
+map <leader>p :NERDTreeToggle<cr>
+
+" clear out a search
+nnoremap <leader>, :noh<cr>
+
+" match bracket pairs (lot easier than type %)
+nnoremap <tab> %
+vnoremap <tab> %
