@@ -154,6 +154,7 @@ let g:mapleader = " "
 " Fast saving + saving/exit
 nmap <leader>w :w!<cr>
 nmap <leader>x :x!<cr>
+nmap <leader>q :q!<cr>
 
 " NERDTree
 map <leader>p :NERDTreeToggle<cr>
