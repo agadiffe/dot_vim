@@ -13,25 +13,25 @@ Plugin 'tomasr/molokai'
 " Plugin 'roblabla/42vim'
 
 " snippets
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
-Plugin 'honza/vim-snippets'
+" Plugin 'MarcWeber/vim-addon-mw-utils'
+" Plugin 'tomtom/tlib_vim'
+" Plugin 'garbas/vim-snipmate'
+" Plugin 'honza/vim-snippets'
 
 " go to definition
-Plugin 'universal-ctags/ctags'
+" Plugin 'universal-ctags/ctags'
 
 " source code browser
-Plugin 'taglist.vim'
+" Plugin 'taglist.vim'
 
 " Language plugins
 Plugin 'octol/vim-cpp-enhanced-highlight'
 
 " Utilities
-Plugin 'scrooloose/nerdtree'
+" Plugin 'scrooloose/nerdtree'
 
 " File Navigation
-Plugin 'Command-T'
+" Plugin 'Command-T'
 
 call vundle#end()
 
